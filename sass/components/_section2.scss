@@ -1,0 +1,30 @@
+.section-two {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  .display-style {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+    box-sizing: border-box;
+    &__adventages-icons {
+      padding: 25px 100px;
+      background-color: $secbgcol;
+      margin-bottom: 30px;
+      border-radius: 4px;
+    }
+    .header-three {
+      font-size: 16px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    &__paragraph-lorem {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $secfontcol;
+    }
+  }
+}

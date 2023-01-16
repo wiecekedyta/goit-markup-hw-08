@@ -1,0 +1,173 @@
+.footer-box {
+  background-color: #2f303a;
+  padding: 60px 0;
+  .footer-style {
+    display: flex;
+    justify-content: left;
+    .logo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: $genactivecol;
+      text-decoration: none;
+
+      &--bicolor {
+        color: #000;
+      }
+    }
+
+    .address-items {
+      margin-top: 20px;
+      .list-style {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        list-style: none;
+      }
+      & li {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $genbgcol;
+        margin-bottom: 9px;
+      }
+      &__contact-footer {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+      }
+      &__contact-footer:hover {
+        color: $genactivecol;
+        transition: var(--slowmo);
+      }
+      &__contact-footer:focus {
+        color: $genactivecol;
+        outline: none;
+        transition: $slowmo;
+      }
+    }
+    .footer-social {
+      padding-left: 70px;
+      &__header {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $genbgcol;
+        margin-bottom: 20px;
+      }
+      &__list {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        & li {
+          fill: $genbgcol;
+          list-style: none;
+          gap: 10px;
+        }
+        &__link {
+          padding: 12px 12px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          color: $genbgcol;
+          display: block;
+          &--icon {
+            display: block;
+            fill: currentColor;
+          }
+        }
+        &__link:hover {
+          color: $genbgcol;
+          background-color: $genactivecol;
+          cursor: pointer;
+          transition: $slowmo;
+        }
+        &__link:focus {
+          color: $genbgcol;
+          background-color: $genactivecol;
+          cursor: pointer;
+          outline: none;
+          transition: $slowmo;
+        }
+      }
+    }
+    .newsletter-box {
+      margin-left: 74px;
+      .newsletter-form {
+        display: flex;
+        gap: 12px;
+        align-items: flex-end;
+        &__header {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: $genbgcol;
+          width: 358px;
+        }
+        &__input {
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          border-radius: 4px;
+          background-color: $thirdbgcol;
+          color: rgba(255, 255, 255, 0.6);
+          padding: 15px;
+          margin-top: 20px;
+          margin-right: 12px;
+          width: 358px;
+          box-sizing: border-box;
+        }
+        &__input:focus,
+        &__input:active {
+          border: 1px solid $genactivecol;
+          outline: none;
+          transition: $slowmo;
+        }
+        &__input:focus::placeholder,
+        &__input:active::placeholder {
+          color: $genactivecol;
+          transition: $slowmo;
+        }
+        &__submit-button {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 0.06em;
+          color: $genbgcol;
+          background: $genactivecol;
+          border: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 4px;
+          box-sizing: border-box;
+          height: 50px;
+          width: 200px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 42px;
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          .newsletter-icon-send {
+            fill: $genbgcol;
+          }
+        }
+        &__submit-button:hover {
+          cursor: pointer;
+          transition: $slowmo;
+        }
+      }
+    }
+  }
+}

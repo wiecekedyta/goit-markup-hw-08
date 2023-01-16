@@ -1,0 +1,47 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $genfontcol;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.conatiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.header-two {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.header-four {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: $genfontcol;
+}
+.header-five {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $genfontcol;
+  margin: 20px 24px 4px 24px;
+}

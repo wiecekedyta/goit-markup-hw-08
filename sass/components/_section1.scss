@@ -1,0 +1,40 @@
+.section-one {
+  padding: 200px 0;
+  background-color: $thirdbgcol;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/Img-overlay.png"),
+    url("../images/Img-11.jpg");
+  background-position: 50% 50%;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  &__header-one {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    color: $genbgcol;
+    letter-spacing: 0.06em;
+  }
+  &__header-button {
+    background: $genactivecol;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    text-align: center;
+    color: $genbgcol;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,33 @@
+.our-client-box {
+  padding: 94px 0;
+  &__grid {
+    display: flex;
+    gap: 30px;
+    &__icons {
+      list-style: none;
+      fill: $thirdfontcol;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__button {
+        border: 1px solid $thirdfontcol;
+        border-radius: 4px;
+        background-color: $genbgcol;
+        padding: 16px 32px;
+      }
+      &__button:hover {
+        fill: $genactivecol;
+        cursor: pointer;
+        border-color: $genactivecol;
+        transition: $slowmo;
+      }
+      &__button:focus {
+        fill: $genactivecol;
+        cursor: pointer;
+        border-color: $genactivecol;
+        outline: none;
+        transition: $slowmo;
+      }
+    }
+  }
+}
