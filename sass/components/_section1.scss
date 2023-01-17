@@ -4,6 +4,7 @@
   text-align: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   background-image: url("../images/Img-overlay.png"),
@@ -33,6 +34,7 @@
     text-align: center;
     color: $genbgcol;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
