@@ -8,9 +8,36 @@
   flex-direction: column;
   justify-content: center;
   background-image: url("../images/Img-overlay.png"),
-    url("../images/Header1.jpg");
-  background-position: 50% 50%;
+    url("../images/headerbg/Headerbg@mbx1.jpg");
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@mbx2.jpg");
+  }
+  @media (min-width: $tb-size) {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@tbx1.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@tbx2.jpg");
+  }
+  @media (min-width: $dt-size) {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@dtx1.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@dtx2.jpg");
+  }
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
   &__header-one {
