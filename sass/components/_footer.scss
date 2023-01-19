@@ -123,7 +123,6 @@
           text-align: center;
           text-transform: uppercase;
           color: $genbgcol;
-          width: 358px;
         }
         &__input {
           border: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,8 +133,8 @@
           padding: 15px;
           margin-top: 20px;
           margin-bottom: 20px;
-          margin-right: 12px;
-          width: 358px;
+
+          width: calc(100vw - 30px);
           box-sizing: border-box;
         }
         &__input:focus,

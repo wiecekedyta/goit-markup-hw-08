@@ -1,6 +1,9 @@
 .our-team-box {
-  padding: 60px;
+  padding: 60px 0;
   background: $secbgcol;
+  @media (min-width: 1152px) {
+    padding: 60px;
+  }
   .display-style {
     display: flex;
     justify-content: center;
@@ -8,6 +11,9 @@
     list-style: none;
     gap: 30px;
     box-sizing: border-box;
+    @media (min-width: $dt-size) {
+      flex-wrap: nowrap;
+    }
   }
   .work-position {
     font-size: 16px;
@@ -23,7 +29,10 @@
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
       padding-bottom: 30px;
-      width: calc(100vw - 30px);
+
+      .team-figure-box img {
+        object-fit: contain;
+      }
       .social-media-grid {
         display: flex;
         flex-wrap: wrap;

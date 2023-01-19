@@ -1,5 +1,5 @@
 .section-one {
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: $thirdbgcol;
   text-align: center;
   align-items: center;
@@ -8,15 +8,15 @@
   flex-direction: column;
   justify-content: center;
   background-image: url("../images/Img-overlay.png"),
-    url("../images/Img-11.jpg");
+    url("../images/Header1.jpg");
   background-position: 50% 50%;
-  max-width: 1600px;
+
   margin: 0 auto;
   position: relative;
   &__header-one {
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.62;
     color: $genbgcol;
     letter-spacing: 0.06em;
   }

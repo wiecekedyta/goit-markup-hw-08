@@ -1,31 +1,43 @@
 .section-two {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
   .display-style {
+    max-width: 450px;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    list-style: none;
+    align-items: center;
     gap: 30px;
     box-sizing: border-box;
+
     &__adventages-icons {
-      padding: 25px 100px;
+      padding: 25px 0;
       background-color: $secbgcol;
       margin-bottom: 30px;
       border-radius: 4px;
+
+      text-align: center;
     }
+
     .header-three {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       margin-bottom: 10px;
+      text-align: center;
     }
     &__paragraph-lorem {
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
       color: $secfontcol;
+      text-align: justify;
     }
   }
 }
