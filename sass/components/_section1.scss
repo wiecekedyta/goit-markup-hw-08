@@ -9,33 +9,8 @@
   justify-content: center;
   background-image: url("../images/Img-overlay.png"),
     url("../images/headerbg/Headerbg@mbx1.jpg");
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/Img-overlay.png"),
-      url("../images/headerbg/Headerbg@mbx2.jpg");
-  }
-  @media (min-width: $tb-size) {
-    background-image: url("../images/Img-overlay.png"),
-      url("../images/headerbg/Headerbg@tbx1.jpg");
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/Img-overlay.png"),
-      url("../images/headerbg/Headerbg@tbx2.jpg");
-  }
-  @media (min-width: $dt-size) {
-    background-image: url("../images/Img-overlay.png"),
-      url("../images/headerbg/Headerbg@dtx1.jpg");
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/Img-overlay.png"),
-      url("../images/headerbg/Headerbg@dtx2.jpg");
-  }
+  background-size: cover;
+  max-width: 480px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -65,5 +40,44 @@
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@mbx2.jpg");
+  }
+}
+@media (min-width: $tb-size) {
+  .section-one {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@tbx1.jpg");
+    max-width: 786px;
+  }
+}
+@media screen and (min-width: 786px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 786px) and (min-resolution: 192dpi),
+  screen and (min-width: 786px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@tbx2.jpg");
+    max-width: 786px;
+  }
+}
+@media (min-width: $dt-size) {
+  .section-one {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@dtx1.jpg");
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url("../images/Img-overlay.png"),
+      url("../images/headerbg/Headerbg@dtx2.jpg");
   }
 }
