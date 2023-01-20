@@ -1,0 +1,165 @@
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: $genactivecol;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 32px;
+  background-color: $genbgcol;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container .is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 16px;
+  color: $genfontcol;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: $genactivecol;
+}
+
+.mobile-header-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+
+    &--size {
+      font-size: 2.13rem;
+      line-height: 2.5;
+      margin-top: 250px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $secfontcol;
+
+    &--color {
+      color: $genactivecol;
+    }
+
+    &:hover {
+      color: $genactivecol;
+      opacity: 0.7;
+    }
+    &:focus {
+      color: $genactivecol;
+      opacity: 0.7;
+    }
+  }
+}
+
+.mobile-menu-social-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding-top: 64px;
+
+  &__item {
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $genactivecol;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    &:focus {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+}
