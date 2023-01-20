@@ -137,7 +137,8 @@
         letter-spacing: 0.03em;
         color: $secfontcol;
         margin-bottom: 30px;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         position: relative;
         & a {
           color: $genactivecol;
