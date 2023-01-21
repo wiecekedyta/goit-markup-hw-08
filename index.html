@@ -22,8 +22,8 @@
       <div class="nav-box conatiner">
         <div class="nav-links">
           <a class="logo" href="#">Web<span class="logo--bicolor">Studio</span></a>
-          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="24" height="24">
+          <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" class="menu__toggle-icon">
               <use href="images/icons.svg#icon-menu_40px"></use>
             </svg>
           </button>
@@ -56,6 +56,7 @@
       </div>
     </nav>
   </header>
+
   <main>
     <!--Header-->
     <div class="section-one">
@@ -458,39 +459,7 @@
     </div>
   </footer>
 
-  <!-- MODAL MENU -->
 
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-      <svg width="18" height="18"><use href="./images/icons.svg#icon-Vector"></use></svg>
-    </button>
-    <ul class="mobile-menu">
-      <li><a href="index.html" class="link">Agencja</a></li>
-      <li><a href="portfolio.html" class="link">Portfolio</a></li>
-      <li><a href="#" class="link">Kontakt</a></li>
-    </ul>
-    <ul class="mobile-header-list">
-      <li class="mobile-header-list__item mobile-header-list__item--size">
-        <a
-          class="mobile-header-list__link mobile-header-list__link--color"
-          href="tel:+48111111111"
-          >+48 111 111 111</a
-        >
-      </li>
-      <li class="mobile-header-list__item">
-        <a class="mobile-header-list__link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-      </li>
-    </ul>
-    <ul class="mobile-menu-social-media-list">
-      <li class="mobile-menu-social-media-list__item">Instagram</li>
-      <li class="mobile-menu-social-media-list__item">Twitter</li>
-      <li class="mobile-menu-social-media-list__item">Facebook</li>
-      <li class="mobile-menu-social-media-list__item">LinkedIn</li>
-    </ul>
-  </div>
-  
   <!--MODAL WINDOW-->
 
   <div class="backdrop is-hidden" data-modal>
@@ -539,10 +508,54 @@
       </form>
     </div>
   </div>
+  <!-- Modal Menu-->
+
+  <div class="menu js-menu-container" id="mobile-menu">
+    <button class="menu__toggle js-close-menu">
+      <svg class="menu__toggle-icon" width="16px" height="15px">
+        <use href="./images/x.svg#icon-Vector"></use>
+      </svg>
+    </button>
+    <div class="menu__modal">
+      <ul class="menu__nav">
+        <li>
+          <a href="index.html" class="menu__link">Agencja</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="menu__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="index.html" class="menu__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="menu__contact">
+        <a href="tel:+48111111111" class="menu__contact-link menu__contact-link--lightblue">
+          +48 111 111 111
+        </a>
+        <a href="mailto:info@devstudio.com" class="menu__contact-link menu__contact-link--grey">
+          info@devstudio.com
+        </a>
+        <ul class="menu__social">
+          <li>
+            <a class="menu__social-link" href="https://www.instagram.com">Instagram</a>
+          </li>
+          <li>
+            <a class="menu__social-link" href="https://www.twitter.com">Twitter</a>
+          </li>
+          <li>
+            <a class="menu__social-link" href="https://www.facebook.com">Facebook</a>
+          </li>
+          <li>
+            <a class="menu__social-link--border-none" href="https://www.linkedin.com">Linkedln</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script defer src="./js/mobile-menu.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
