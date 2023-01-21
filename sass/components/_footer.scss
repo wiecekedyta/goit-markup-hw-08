@@ -1,6 +1,6 @@
 .footer-box {
   background-color: #2f303a;
-  padding: 60px 0;
+  padding: 60px 0 60px 0;
   width: 100vx;
   .footer-style {
     display: flex;
@@ -200,11 +200,31 @@
       max-width: 450px;
     }
   }
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    padding: 60px 0 0 0;
+
     .footer-style {
       max-width: 1200px;
+      justify-content: left;
+      & div {
+        text-align: left;
+      }
+
+      .logo {
+        text-align: left;
+        justify-content: left;
+      }
+
+      .address-items {
+        text-align: left;
+        justify-content: left;
+      }
       .footer-social {
         margin-left: 70px;
+        text-align: left;
+        justify-content: left;
       }
 
       .newsletter-box {
