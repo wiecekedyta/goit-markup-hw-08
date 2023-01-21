@@ -4,8 +4,8 @@
   top: 0;
   left: 0;
   opacity: 0;
-  width: 85vw;
-  height: 92vh;
+  width: 100vw;
+  height: 100vh;
   transform: translateX(-100%);
   background: $genbgcol;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -20,18 +20,9 @@
     border-radius: 50%;
     outline: none;
     display: flex;
-    justify-content: right;
-    align-items: flex-start;
-    flex-direction: column;
+    justify-content: flex-end;
   }
-  &__button {
-    color: $genfontcol;
-    background-color: $genbgcol;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
+
   &__toggle-icon:hover,
   &__toggle-icon:focus {
     fill: $genactivecol;
@@ -51,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
   }
 
   &__link {
@@ -127,9 +118,7 @@
     opacity: 1;
     display: flex;
     transform: translateX(0);
-    display: flex;
     flex-direction: column;
-    align-items: flex-end;
   }
 
   @media screen and (min-width: 768px) {
