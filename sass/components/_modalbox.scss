@@ -180,4 +180,15 @@
       }
     }
   }
+  @media screen and (min-width: 768px) {
+    .modal {
+      max-width: 450px;
+    }
+    .comment-form__label__input {
+      max-width: 370px;
+    }
+    .comment-form__input--textarea {
+      max-width: 370px;
+    }
+  }
 }
