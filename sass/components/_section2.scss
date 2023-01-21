@@ -40,4 +40,26 @@
       text-align: justify;
     }
   }
+  @media screen and (min-width: 768px) {
+    .display-style {
+      max-width: 100vh;
+      .display-style__adventages-icons {
+        max-width: 354px;
+      }
+      .display-style__paragraph-lorem {
+        max-width: 354px;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .display-style {
+      max-width: 1200px;
+      .display-style__adventages-icons {
+        max-width: 270px;
+      }
+      .display-style__paragraph-lorem {
+        max-width: 270px;
+      }
+    }
+  }
 }

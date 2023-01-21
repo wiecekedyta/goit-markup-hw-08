@@ -8,6 +8,7 @@
     justify-content: center;
     & div {
       text-align: center;
+      justify-content: center;
     }
     .logo {
       font-family: "Raleway", sans-serif;
@@ -178,6 +179,16 @@
           transition: $slowmo;
         }
       }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .footer-style {
+      .address-items {
+        margin-right: 144px;
+      }
+    }
+    .newsletter-box {
+      max-width: 450px;
     }
   }
 }
