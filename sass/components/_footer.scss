@@ -181,14 +181,51 @@
       }
     }
   }
+  @media (max-width: 767px) {
+    .footer-style {
+      max-width: 450px;
+    }
+    .newsletter-form__input {
+      max-width: 450px;
+    }
+  }
   @media screen and (min-width: 768px) {
     .footer-style {
-      .address-items {
-        margin-right: 144px;
+      max-width: 768px;
+      .footer-social {
+        margin-left: 144px;
       }
     }
     .newsletter-box {
       max-width: 450px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .footer-style {
+      max-width: 1200px;
+      .footer-social {
+        margin-left: 70px;
+      }
+
+      .newsletter-box {
+        margin-left: 74px;
+        max-width: 570px;
+        .newsletter-form {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          justify-content: flex-start;
+          &__input {
+            max-width: 358px;
+          }
+          &__header {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }
