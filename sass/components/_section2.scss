@@ -6,7 +6,7 @@
   align-items: center;
 
   .display-style {
-    max-width: 450px;
+    width: 100%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -41,19 +41,18 @@
     }
   }
   @media screen and (min-width: 768px) {
-    .display-style {
-      max-width: 100vh;
-      .display-style__adventages-icons {
-        max-width: 354px;
-      }
+    .display-style li {
+      width: calc((100% - 30px) / 2);
+
       .display-style__paragraph-lorem {
-        max-width: 354px;
+        width: 100%;
       }
     }
   }
   @media screen and (min-width: 1200px) {
     .display-style {
       max-width: 1200px;
+      flex-wrap: nowrap;
       .display-style__adventages-icons {
         max-width: 270px;
       }

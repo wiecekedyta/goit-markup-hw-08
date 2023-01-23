@@ -11,6 +11,7 @@
     list-style: none;
     gap: 30px;
     box-sizing: border-box;
+
     @media (min-width: $dt-size) {
       flex-wrap: nowrap;
     }
@@ -22,6 +23,7 @@
     letter-spacing: 0.03em;
     color: $secfontcol;
     text-decoration: none;
+    padding: 0 15px;
 
     .team-figure-box {
       background: $genbgcol;

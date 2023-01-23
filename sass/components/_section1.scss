@@ -79,5 +79,8 @@
   .section-one {
     background-image: url("../images/Img-overlay.png"),
       url("../images/headerbg/Headerbg@dtx2.jpg");
+    &__header-one {
+      font-size: 44px;
+    }
   }
 }

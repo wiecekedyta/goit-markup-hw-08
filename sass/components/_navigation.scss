@@ -3,6 +3,8 @@
   .nav-box {
     display: flex;
     flex-direction: column;
+    height: 60px;
+    justify-content: center;
     .nav-links {
       display: flex;
       justify-content: space-between;
