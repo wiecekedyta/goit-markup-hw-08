@@ -10,7 +10,7 @@
   background-image: url("../images/Img-overlay.png"),
     url("../images/headerbg/Headerbg@mbx1.jpg");
   background-size: cover;
-  max-width: 480px;
+  max-width: 768px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -54,7 +54,7 @@
   .section-one {
     background-image: url("../images/Img-overlay.png"),
       url("../images/headerbg/Headerbg@tbx1.jpg");
-    max-width: 786px;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 786px) and (min-device-pixel-ratio: 2),
@@ -63,7 +63,7 @@
   .section-one {
     background-image: url("../images/Img-overlay.png"),
       url("../images/headerbg/Headerbg@tbx2.jpg");
-    max-width: 786px;
+    max-width: 1199px;
   }
 }
 @media (min-width: $dt-size) {
